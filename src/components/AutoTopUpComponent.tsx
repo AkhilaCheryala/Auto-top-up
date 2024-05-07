@@ -1,8 +1,7 @@
-// Let's import the necessary stuff from React and Material-UI.
 import React, { useState, useEffect } from 'react';
 import { Slider, Switch, Button, Typography, createTheme, ThemeProvider } from '@mui/material';
 import { styled } from '@mui/system';
-import './Auto.css'; // Let's import any CSS file here.
+import './Auto.css'; 
 
 // Define options for credit purchase.
 const creditOptions = [
@@ -48,7 +47,7 @@ const IOSSwitch = styled(Switch)(({ theme }) => ({
   },
 }));
 
-// Define the theme.
+// Defining the theme.
 const theme = createTheme({
   palette: {
     primary: {
@@ -57,12 +56,12 @@ const theme = createTheme({
   },
 });
 
-// Define the AutoTopUpComponent functional component.
+// Defining the AutoTopUpComponent functional component.
 const AutoTopUpComponent: React.FC = () => {
   // State to manage auto top-up feature.
   const [autoTopUp, setAutoTopUp] = useState<boolean>(true);
 
-  // Set default slider value based on stored value or default option.
+  // Setting default slider value based on stored value or default option.
   const defaultSliderValue = creditOptions.findIndex(option => option.credits === 1200) / (creditOptions.length - 1);
   const [sliderValue, setSliderValue] = useState<number>(() => {
     const storedValue = localStorage.getItem('sliderValue');
