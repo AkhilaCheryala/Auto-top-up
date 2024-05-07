@@ -1,0 +1,65 @@
+
+.switch-container{
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  gap: 5px;
+  }
+  
+  .xyz{
+      color: #8A2BE2;
+      font-weight: 600;
+  }
+  .mark-label{
+      text-align: left;
+      margin-left:4rem;
+  }
+  .learn-more-link {
+    color: grey;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .learn-more-link:hover {
+  cursor: pointer;
+  }
+  .one{
+      color: black;
+      font-weight: 600;
+  }
+  /* Auto.css */
+  
+  .autotop{
+   margin: 1rem;
+   display: flex;
+   flex-direction: column;
+   font-family: "Poppins", sans-serif;
+   font-size: 20px;
+   gap: 6px;
+  }
+  .MuiSlider-rail {
+    background-color: #3f3d3d; /* Adjust color as needed */
+  }
+    
+    /* Make slider responsive */
+    @media only screen and (max-width: 600px) {
+      .autotop {
+        padding: 5px;
+        font-size: 16px;
+      }
+      .two{
+        display: none;
+      }
+      .mark-label{
+        text-align: left;
+        margin:0;
+    }
+      .switch-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      
+      .slider {
+        margin-top: 10px;
+      }
+    }
